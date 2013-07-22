@@ -13,4 +13,4 @@ results
 
 npm-debug.log
 source/*.css
-demo/*.css
+demo/style/*.css

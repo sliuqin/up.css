@@ -1,0 +1,7 @@
+{
+    "output": {
+        "./demo.css": [
+            "./style/ipod-picker.less"
+        ]
+    }
+}

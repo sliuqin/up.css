@@ -1,0 +1,116 @@
+@import "./reset.less";
+@import "../../lesshat/1.1.1/lesshat";
+@import "./layout.less";
+@import "../../source/fadein.less";
+@import "./rotateOut0deg";
+@import "./rotateOut51deg";
+@import "./rotateOut102deg";
+@import "./rotateOut153deg";
+@import "./rotateOut204deg";
+@import "./rotateOut255deg";
+@import "./rotateOut306deg";
+
+@pickerSize: 133px;
+@pickerItemSize: 38px;
+@pickerItemMargin: 12px;
+.picker.fadeIn {
+  // 检索或设置对象动画的持续时间
+  .animation-duration(1s);
+  // 检索或设置对象动画的延迟时间
+  .animation-delay(.2s);
+  // 检索或设置对象动画的过渡类型
+  /**
+   * linear：线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0)
+   * ease：平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0)
+   * ease-in：由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0)
+   * ease-out：由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0)
+   * ease-in-out：由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0)
+   * cubic-bezier(<number>, <number>, <number>, <number>)：特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内  
+   * cubic-bezier: http://www.roblaplaca.com/examples/bezierBuilder/
+   **/
+  .animation-timing-function(ease);
+  // 检索或设置对象动画时间之外的状态
+  /**
+   * none： 默认值。不设置对象动画之外的状态
+   * forwards： 设置对象状态为动画结束时的状态
+   * backwards： 设置对象状态为动画开始时的状态
+   * both： 设置对象状态为动画结束或开始的状态
+   */
+  .animation-fill-mode(both);
+  .animation-name(fadeIn);
+}
+
+.rotateAnimate(@name) {
+  .animation-name(@name);
+}
+
+.picker {
+  .opacity(0);
+  background-color: #f2f2f2;
+  width: @pickerSize;
+  height: @pickerSize;
+  position: relative;
+  border-radius: 50%;
+  li {
+    width: @pickerItemSize;
+    height: @pickerItemSize;
+    display: inline-block;
+    position: absolute;
+    left: (@pickerSize - @pickerItemSize)/2;
+    top: @pickerItemMargin;
+    .opacity(1);
+    .transform-origin(@pickerItemSize/2 (@pickerSize/2 - @pickerItemMargin));
+
+    .animation-duration(3s);
+    .animation-delay(.2s);
+    .animation-timing-function(ease);
+    .animation-fill-mode(both);
+
+    border-radius: 50%;
+    a {
+      display: block;
+      height: @pickerItemSize;
+      width: @pickerItemSize;
+      border-radius: 50%;
+      text-indent: -9999px;
+    }
+  }
+}
+
+.picker.picker-render {
+  li.picker-silver {
+    background-color: #C4C4C4;
+    .rotateAnimate(rotateOut0deg);
+  }
+  li.picker-purple {
+    background-color: #B98BDC;
+    .rotateAnimate(rotateOut51deg);
+  }
+  li.picker-citrus {
+    background-color: #D1E210;
+    .rotateAnimate(rotateOut102deg);
+  }
+  li.picker-blue {
+    background-color: #00B1E3;
+    //    .transform(rotate(102deg));
+    .rotateAnimate(rotateOut153deg);
+  }
+  li.picker-green {
+    background-color: #69C69D;
+    //    .transform( rotate(153deg));
+    .rotateAnimate(rotateOut204deg);
+  }
+  li.picker-slate {
+    background-color: #70787C;
+    //    .transform( rotate(204deg));
+    .rotateAnimate(rotateOut255deg);
+  }
+  li.picker-pink {
+    background-color: #F18084;
+    .rotateAnimate(rotateOut306deg);
+  }
+
+  li:hover {
+    .opacity(1);
+  }
+}
