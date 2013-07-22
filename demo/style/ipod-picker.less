@@ -9,6 +9,7 @@
 @import "./rotateOut204deg";
 @import "./rotateOut255deg";
 @import "./rotateOut306deg";
+@import "./scale.less";
 
 @pickerSize: 133px;
 @pickerItemSize: 38px;
@@ -81,36 +82,52 @@
   li.picker-silver {
     background-color: #C4C4C4;
     .rotateAnimate(rotateOut0deg);
+    &:hover {
+      background-color: darken(#C4C4C4, 10%);
+    }
   }
   li.picker-purple {
     background-color: #B98BDC;
     .rotateAnimate(rotateOut51deg);
+    &:hover {
+      background-color: darken(#B98BDC, 10%);
+    }
   }
   li.picker-citrus {
     background-color: #D1E210;
     .rotateAnimate(rotateOut102deg);
+    &:hover {
+      background-color: darken(#D1E210, 10%);
+    }
   }
   li.picker-blue {
     background-color: #00B1E3;
-    //    .transform(rotate(102deg));
     .rotateAnimate(rotateOut153deg);
+    &:hover {
+      background-color: darken(#00B1E3, 10%);
+    }
   }
   li.picker-green {
     background-color: #69C69D;
-    //    .transform( rotate(153deg));
     .rotateAnimate(rotateOut204deg);
+    &:hover {
+      background-color: darken(#69C69D, 10%);
+    }
+
   }
   li.picker-slate {
     background-color: #70787C;
-    //    .transform( rotate(204deg));
+
     .rotateAnimate(rotateOut255deg);
+    &:hover {
+      background-color: darken(#70787C, 10%);
+    }
   }
   li.picker-pink {
     background-color: #F18084;
     .rotateAnimate(rotateOut306deg);
-  }
-
-  li:hover {
-    .opacity(1);
+    &:hover {
+      background-color: darken(#F18084, 10%);
+    }
   }
 }
