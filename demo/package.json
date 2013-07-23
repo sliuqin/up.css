@@ -1,7 +1,9 @@
 {
+    "retina":true,
     "output": {
         "./demo.css": [
-            "./style/ipod-picker.less"
+            "./style/ipod-picker.less",
+            "./style/airport.less"
         ]
     }
 }
