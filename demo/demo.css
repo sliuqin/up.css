@@ -461,11 +461,11 @@
     }
 
     100% {
-        -webkit-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -moz-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -o-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -ms-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
+        -webkit-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -moz-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -o-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -ms-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
         -webkit-opacity: 1;
         -moz-opacity: 1;
         opacity: 1;
@@ -480,11 +480,11 @@
     }
 
     100% {
-        -webkit-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -moz-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -o-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -ms-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
+        -webkit-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -moz-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -o-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -ms-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
         -webkit-opacity: 1;
         -moz-opacity: 1;
         opacity: 1;
@@ -499,11 +499,11 @@
     }
 
     100% {
-        -webkit-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -moz-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -o-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -ms-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
+        -webkit-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -moz-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -o-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -ms-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
         -webkit-opacity: 1;
         -moz-opacity: 1;
         opacity: 1;
@@ -518,11 +518,11 @@
     }
 
     100% {
-        -webkit-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -moz-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -o-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        -ms-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
-        transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2) scaleY(2);
+        -webkit-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -moz-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -o-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        -ms-transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
+        transform: rotateX(72deg) scale3d(1, 1, 1) scaleX(2.3) scaleY(1.8);
         -webkit-opacity: 1;
         -moz-opacity: 1;
         opacity: 1;
@@ -530,7 +530,7 @@
 }
 
 .beam {
-    background-image: url(http://127.0.0.1:8099/sprite-f254cd1800c51bde92aa3e92b26c829e-1-png8.png);
+    background-image: url(http://127.0.0.1:8099/sprite-858c151030b5f22f585b9312cd0445b0-1-png8.png);
 }
 
 html {
@@ -1219,6 +1219,11 @@ body .fn-hide {
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     animation-fill-mode: both;
+    -webkit-transform: rotateX(72deg) scale3d(1, 1, 1);
+    -moz-transform: rotateX(72deg) scale3d(1, 1, 1);
+    -o-transform: rotateX(72deg) scale3d(1, 1, 1);
+    -ms-transform: rotateX(72deg) scale3d(1, 1, 1);
+    transform: rotateX(72deg) scale3d(1, 1, 1);
 }
 
 .beam-fastest {
@@ -1259,7 +1264,7 @@ body .fn-hide {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .beam {
-        background-image: url(http://127.0.0.1:8099/sprite-f254cd1800c51bde92aa3e92b26c829e-retina-1-png8.png);
+        background-image: url(http://127.0.0.1:8099/sprite-858c151030b5f22f585b9312cd0445b0-retina-1-png8.png);
         background-size: 980px 418px;
     }
 }
