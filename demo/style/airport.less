@@ -1,0 +1,56 @@
+@import "./reset.less";
+@import "../../lesshat/1.1.1/lesshat";
+@import "./layout.less";
+@import "./wave.less";
+
+.airport-content {
+  background-color: #f6f6f6;
+}
+
+@beamWidth: 980px;
+@beanHeight: 418px;
+.beam {
+  position: relative;
+  background: url(https://i.alipayobjects.com/e/201307/lTgBEwRIL.jpg);
+  width: @beamWidth;
+  height: @beanHeight;
+}
+
+.beam-item {
+  position: absolute;
+  .transition(opacity 950ms cubic-bezier(0.390, 0.575, 0.425, 0.975));
+  .gradient(~"radial-gradient(50% 50%, circle cover, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 35%, rgba(89, 177, 246, 0.8) 90%, rgba(89, 177, 246, 0.8) 100%)");
+  .border-radius(628px);
+  .animation-duration(3s);
+  .animation-delay(.2s);
+  .animation-timing-function(ease);
+  .animation-fill-mode(both);
+}
+
+@top: 70px;
+@left: 50px;
+@fastestSize: 100px;
+.beam-fastest {
+  width: @fastestSize;
+  height: @fastestSize;
+  left: (@beamWidth - @fastestSize) / 2 - @left;
+  top: (@beanHeight - @fastestSize) / 2 - @top;
+  .animation-name(wave);
+}
+@fasterSize: 300px;
+.beam-faster {
+  width: @fasterSize;
+  height: @fasterSize;
+  left: (@beamWidth - @fasterSize) / 2 - @left;
+  top: (@beanHeight - @fasterSize) / 2 - @top + 10;
+  .animation-name(wave);
+}
+@fastSize: 500px;
+.beam-fast {
+  width: @fastSize;
+  height: @fastSize;
+  left: (@beamWidth - @fastSize) / 2 - @left;
+  top: (@beanHeight - @fastSize) / 2 - @top + 20;
+  .animation-name(wave);
+}
+
